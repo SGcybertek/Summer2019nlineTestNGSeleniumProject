@@ -1,4 +1,4 @@
-package VyTrackTests;
+package Practice;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import utils.BrowserUtils;
 
-public class test1 {
+public class Vytrack {
 
     public static void main(String[] args) {
         WebDriverManager.chromedriver().setup();
@@ -21,8 +21,7 @@ public class test1 {
         driver.findElement(By.id("prependedInput2")).sendKeys("UserUser123");
         driver.findElement(By.id("_submit")).click();
         //another way of find login bat and click ,
-        WebElement loginBat= driver.findElement(By.id("_submit"));
-        loginBat.click();
+
         //verify login by title
         BrowserUtils.wait(2);
         String expectedTitle  = "Dashboard";

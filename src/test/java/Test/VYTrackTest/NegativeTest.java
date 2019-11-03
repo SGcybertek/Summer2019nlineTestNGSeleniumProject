@@ -17,7 +17,9 @@ public class NegativeTest {
         IdInput.sendKeys("salesmanager110");
         driver.findElement(By.name("_password")).sendKeys("1234");
         driver.findElement(By.name("_submit")).click();
+
         BrowserUtils.wait(5);
+
         driver.quit();
 
 
