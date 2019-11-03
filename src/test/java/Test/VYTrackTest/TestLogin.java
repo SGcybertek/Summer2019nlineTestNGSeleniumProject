@@ -8,6 +8,7 @@ import utils.BrowserUtils;
 
 public class TestLogin {
     public static void main(String[] args) {
+
         WebDriver driver = BrowserFactory.getDriver("Chrome");
         driver.get("https://qa2.vytrack.com/user/login");
 
