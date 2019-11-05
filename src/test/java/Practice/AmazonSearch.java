@@ -20,9 +20,9 @@ public class AmazonSearch {
 
         driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 
-        String search = "charger";
+        String search = "bookshelf";
         driver.findElement(By.id("twotabsearchtextbox"))
-                .sendKeys("charger"+ Keys.ENTER);
+                .sendKeys("bookshelf"+ Keys.ENTER);
         String actual = driver.findElement(By.id("twotabsearchtextbox") )
                 .getAttribute("value");
 
@@ -35,6 +35,8 @@ public class AmazonSearch {
         }
 
         driver.close();
+
+
 
     }
 }
