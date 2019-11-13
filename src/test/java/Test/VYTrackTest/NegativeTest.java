@@ -15,6 +15,7 @@ public class NegativeTest {
          driver.get("https://qa2.vytrack.com/user/login");
         WebElement IdInput = driver.findElement(By.name("_username"));
         IdInput.sendKeys("salesmanager110");
+        BrowserUtils.wait(2);
         driver.findElement(By.name("_password")).sendKeys("1234");
         driver.findElement(By.name("_submit")).click();
 
