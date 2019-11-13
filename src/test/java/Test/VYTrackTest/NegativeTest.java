@@ -18,7 +18,14 @@ public class NegativeTest {
         driver.findElement(By.name("_password")).sendKeys("1234");
         driver.findElement(By.name("_submit")).click();
 
-        BrowserUtils.wait(5);
+
+        WebElement name = driver.findElement
+                (By.xpath("//div[@class='alert alert-error']//div"));
+        System.out.println(name.getText());
+
+
+        BrowserUtils.wait(3);
+
 
         driver.quit();
 
