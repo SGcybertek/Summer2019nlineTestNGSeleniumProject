@@ -34,7 +34,7 @@ public class AnnotationsTest {
         System.out.println("Test 1!");
         Assert.assertTrue(5 == 5);
     }
-    @Test
+    @Test(timeOut = 50000)
     public void test2() {
         System.out.println("Test 2!");
     }

@@ -64,6 +64,6 @@ public class Dropdowns {
     }
     @AfterMethod
     public void teardown() {
-        driver.quit();
+      // driver.quit();
     }
 }

@@ -7,10 +7,16 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import utils.BrowserFactory;
+
+
 public class TestNGReview {
+
     //whatever is common among tests, can go into @beforemethod and @aftermethod
     // it helps to reduce code duplication
+
     private WebDriver driver;
+
+
     @BeforeMethod
     public void setup(){
         System.out.println("Before method!");
@@ -21,6 +27,8 @@ public class TestNGReview {
         System.out.println("After method!");
         driver.quit();
     }
+
+
     @Test(description = "Verify title of google.com", priority = 2)
     public void test1(){
         System.out.println("Test 1");

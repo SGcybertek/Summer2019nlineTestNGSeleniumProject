@@ -1,4 +1,4 @@
-package Test.VYTrackTest;
+package SeleniumHomeWorks.VYTrackTest;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
